@@ -1,11 +1,11 @@
 import "./CampoTexto.css"
 
 const CampoTexto = (props) => {
-    console.log("Datos: ", props.titulo)
+    console.log("Datos: ", props)
     const placeholderModificador=`${props.placeholder}...`
     return <div className="campo-texto">
         <label>{ props.titulo }</label>
-        <input placeholder={placeholderModificador}/>
+        <input placeholder={placeholderModificador} required={props.required}/>
     </div>
 }
 //placeholder "es el texto que aparece atras antes de comenzar a escribir"
